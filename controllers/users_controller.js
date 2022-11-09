@@ -16,5 +16,5 @@ module.exports.posts = (req,res) => {
 //Testing
 
 module.exports.home = (req,res) => {
-    return res.end('<h1>Home section of user</h1>')
+    return res.render('users',{title:"Users"})
 }

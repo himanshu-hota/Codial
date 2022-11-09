@@ -1,3 +1,5 @@
 module.exports.home = (req,res) => {
-    return res.end('Express is up for Codial');
+    return res.render('home',{
+        title:"HOME"
+    })
 }
