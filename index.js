@@ -3,6 +3,13 @@ const router = require("./routes");
 const port = 8000;
 const app = express();
 const expressLayouts = require('express-ejs-layouts');
+const mongoose = require('./config/mongoose');
+const cookieParser = require('cookie-parser');
+//Manage post request
+app.use(express.urlencoded());
+
+//Set cookie parser
+app.use(cookieParser());
 
 //Set static files
 app.use(express.static('./assets'))
