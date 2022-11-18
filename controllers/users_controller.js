@@ -2,20 +2,28 @@ const User = require('../models/user');
 
 //Profile 
 module.exports.profile = (req, res) => {
-    return res.end('<h1>User Profile</h1>');
+    return res.render('user_profile',{title:"User Profile"});
 }
 
 //Sign up
 
 module.exports.signup = (req, res) => {
+    if(req.isAuthenticated()){
+       return res.redirect('/users/profile');
+    }
     return res.render('user_sign_up', {});
 }
 
 //Sign in
 
 module.exports.signin = (req, res) => {
+    if(req.isAuthenticated()){
+      return res.redirect('/users/profile');
+    }
     return res.render('user_sign_in', {});
 }
+
+
 
 //Get the signup data
 
@@ -48,6 +56,15 @@ module.exports.create = (req, res) => {
 //Sign in ans create session for the user
 
 module.exports.createSession = (req, res) => {
-    // res.render();
-    //to do
+   return res.redirect('/users/profile');
+}
+
+module.exports.destroySession = (req,res) => {
+    // req.logout();
+    // return res.redirect('/');
+
+    req.logout(function(err) {
+        if (err) { return next(err); }
+        res.redirect('/');
+      });
 }

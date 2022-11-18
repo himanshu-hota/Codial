@@ -1,7 +1,8 @@
 const mongoose = require('mongoose');
 
 //Connect to database
-mongoose.connect('mongodb://localhost/codial_development');
+mongoose.connect('mongodb://0.0.0.0/codial_development');
+// mongoose.connect('mongodb://0.0.0.0:27017/codial_development');
 
 // Check for error
 const db = mongoose.connection;

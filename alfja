@@ -1,0 +1,29 @@
+[33mcommit 212484ee7104dd9ca33838cffc3a455d29a8adb7[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Himanshu Hota <Himanshuhota55@gmail.com>
+Date:   Sat Nov 12 10:52:36 2022 +0530
+
+    Sign in and Sign up page added
+
+[33mcommit 58de81fc587f82af6321b98e1db56bd7b4bcda0b[m
+Author: Himanshu Hota <Himanshuhota55@gmail.com>
+Date:   Wed Nov 9 10:08:09 2022 +0530
+
+    added layouts
+
+[33mcommit b31cbd51aa4189daa97b1df94079d90b62c3e21c[m
+Author: Himanshu Hota <Himanshuhota55@gmail.com>
+Date:   Tue Nov 8 21:49:24 2022 +0530
+
+    Set view Engine
+
+[33mcommit 85d2d125f10f74a699c7311aaf3dd94b0bffdd13[m
+Author: Himanshu Hota <Himanshuhota55@gmail.com>
+Date:   Tue Nov 8 18:09:41 2022 +0530
+
+    Added controller and router for home
+
+[33mcommit e1416809e8dd578f7ff4904a6608207290cc58c7[m
+Author: Himanshu Hota <Himanshuhota55@gmail.com>
+Date:   Tue Nov 8 17:45:46 2022 +0530
+
+    First commit
