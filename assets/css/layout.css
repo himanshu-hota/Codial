@@ -1,8 +1,10 @@
 body{
     margin: 0;
-    background-color: red;
+    /* background-color: red; */
     /* text-align: center; */
 }
+
+
 
 header{
     width: 100%;
@@ -10,9 +12,36 @@ header{
     background-color: aqua;
     position: fixed;
     top: 0;
-    /* margin-top: 100px; */
-    display: block;
-    z-index: -1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+header ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-basis: 70%;
+}
+
+header ul li{
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+header ul li a{
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    /* font-weight: 600; */
+    letter-spacing:2px;
+    padding: 5px;
+    background-color: brown;
+    border-radius: 10px;
+    color: #fff;
 }
 
 footer{

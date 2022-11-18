@@ -1,4 +1,6 @@
 const mongoose = require('mongoose');
+const User = require('./user');
+
 const postSchema = new mongoose.Schema({
     content:{
         type:String,
@@ -6,7 +8,7 @@ const postSchema = new mongoose.Schema({
     },
     user:{
         type:mongoose.Schema.Types.ObjectId,
-        ref:"User"
+        ref:'user'
     }
 },{
     timestamps:true

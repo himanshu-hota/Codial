@@ -5,30 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- <link rel="stylesheet" href="/css/layout.css"> -->
+    <link rel="stylesheet" href="/css/layout.css">
     <%- style %>
 </head>
 <body>
-    <header>
-        
-        Page Header
 
-        <ul>
-            <% if(locals.user){ %>
+    <%- include('_header') -%>
 
-                <li><%= user.name %></li>
-                <li><a href="/users/sign-out">Sign Out</a></li>
-            <% }else{ %>   
-                <li><a href="/users/sign-in">Sign in</a></li>
-                <li><a href="/users/sign-up">Sign up</a></li>
-            <% } %>
-        </ul>
+<%- body -%>
 
-    </header>
-
-<%- body %>
-
-    <footer></footer>
+<%- include('_footer') -%>
 
 <%- script %>
 </body>

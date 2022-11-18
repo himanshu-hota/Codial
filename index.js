@@ -10,7 +10,6 @@ const session = require('express-session');
 const passport = require('passport');
 const passportLocal = require('./config/passport-local-strategy');
 const MongoStore = require('connect-mongo')(session); // Store session
-const sassMiddleWare = require('node-sass')
 
 //Manage post request
 app.use(express.urlencoded());
@@ -54,6 +53,8 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 app.use(passport.setAuthenticatedUser);
+
+
 // Use Express router
 app.use('/', require('./routes'));
 
